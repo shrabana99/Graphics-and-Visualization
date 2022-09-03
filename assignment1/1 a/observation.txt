@@ -1,0 +1,14 @@
+The Barnsley fern has been generated using 4 affined affine transformations named as m1, m2, m3, m4.
+(reference : https://en.wikipedia.org/wiki/Barnsley_fern)
+
+1. The transformation matrices are as follows: 
+    a) applying m1 transformation will produce a line / steam of the fern.
+    b) applying m2 transformation will move the fern slightly up and right direction. 
+    c) applying m3 transformation will rotate the fern in the left producing the leaves of left side
+    d) applying m4 transformation will flip then rotate the fern in the right side 
+    producing the leaves of right side. 
+    
+2.  Applying this transformation matrix on World matrix will display the described transformations. 
+
+3.  From one point (0, 0, 0, 1), "verticeNo" of vertices have been generated recursively 
+    in the CreateVertexBuffer() and point primitive has been used to draw the fern. 

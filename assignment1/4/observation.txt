@@ -1,0 +1,16 @@
+
+1.  After projecting the mesh at center, the mesh has been cut in the geometry shader.
+
+2.  The plane parallel to xz plane has been taken as the plane to slice the mesh. 
+    Equation of the plane used is y = yaxis where yaxis is the variable denoting distance 
+    from the xz plane. 
+
+3.  Using geometry shader the triangles with the three vertices have been drawn only if either 
+    all the vertices of the triangle are above this plane or 
+    all the vertices of the triangle are below this plane.
+
+4.  In case of the lower half, a translation of -0.1 along Y axis has been used to show 
+    they are detached from one another. 
+
+5.  The FPS is 47.62 but while applying camera movement through keyboard, it lowers to 
+    the range of 32 to 38. 

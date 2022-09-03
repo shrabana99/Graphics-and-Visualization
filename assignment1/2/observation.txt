@@ -1,0 +1,20 @@
+a)  In the Camera class, for a given position, the axis of the camera is calculated in 
+    setParameters() function.
+b)  The translateCamera() will translate the camera in -x direction and rollCamera() will 
+    rotate the camera in clockwise (z-axis) rotation.
+c)  The keyboard input is handled using onKeyPress() where
+
+    1.  For pressing key 1, first a translation in -x direction is applied 
+        then clockwise (z-axis) rotation is applied. 
+        The view matrix becomes rotation matrix  * translation matrix. 
+        The object is appeared to follow a spiral motion in counter clockwise 
+        direction and go out of the view screen. 
+
+    2.  For pressing key 2, first clockwise (z-axis) rotation is applied,
+        then a translation in -x direction is applied .
+        The view matrix becomes  translation matrix * rotation matrix. 
+        The object is appeared to follow linear motion by rotating about its z axis
+        and go out of the view screen. 
+
+d)  For continuous key pressing, the FPS is found to lower in the range (32 to 38 )
+    from the initial rate of 47.62. 

@@ -1,0 +1,17 @@
+1.  The ball has been drawn initially with a radius 1 and centered at the origin and scaled properly 
+    to make it small. The box is drawn from (-1, -1, -1) to (1,1,1).  
+
+2.  To make the ball move, class Motion has been defined where the direction of velocity vector 
+    can be generated randomly or a predefined direction of veclocity can be used. 
+
+3.  With a given speed, a translation will be applied to the center of the ball as well as 
+    all the points on that ball. 
+
+4.  If the distance between center of the ball and any 6 planes equals to the radius of the ball, 
+    the ball has touched the box. 
+    The ball is stopped in the space for 5 frames to give it a bouncing effect.
+
+5.  If a ball is touching a plane, the ball is reflected back with the same velocity.  
+
+6.  A continuous rotation to the whole scene is implemented by placing the camera at a fixed 
+    distance which focuses at the origin then rotates around the box with a fixed speed.  

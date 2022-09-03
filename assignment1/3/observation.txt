@@ -1,0 +1,15 @@
+1.  The mesh has been colored using the value of Z coordinate of gl_Position.
+
+2.  For z value in (0.6 to 1),  the blue component will be 0.8 and red will be 0.2.
+
+3.  For z value in (0.2 to 0.6),  the blue component will be 0.6 and red will be 0.4.
+
+4.  For z value in (-0.2 to 0.2),  the blue component will be 0.4 and red will be 0.6.
+
+5.  For z value in (-0.6 to -0.2),  the blue component will be 0.2 and red will be 0.8.
+
+5.  For z value in (-1 to -0.6),  the blue component will be 0 and red will be 1.
+
+6.  The points with higher Z coordinate of gl_Position will appear blue,
+    and lower Z coordinate of gl_Position will appear red. Hence the back of the mesh 
+    will appear blue and the front will be reddish. 
